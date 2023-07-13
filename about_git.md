@@ -1,5 +1,5 @@
 [목록으로](https://github.com/nxx5xxx/study/blob/master/readme.md)
-<a href="#abt" style="font-size: 24px;">맨 아래로</a>
+<a href="#abt" style="font-size: 24px;float:right">맨 아래로</a>
 # Git
 	협업도구
 	버전관리도구
