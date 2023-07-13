@@ -5,8 +5,8 @@
 -----------------------------------
 
 ## about_git.md - git에대해 정리해놓음
-  Git은 왜쓰게 되었는가
-  어떠한 상황에서 써야하는가
-  GitKraken을 사용하여 branch , merge , pull , push , commit 등 으로 형상관리 해주기
-  GitFlow 전략을 이용하여 협업하는법
+    Git은 왜쓰게 되었는가
+    어떠한 상황에서 써야하는가
+    GitKraken을 사용하여 branch , merge , pull , push , commit 등 으로 형상관리 해주기
+    GitFlow 전략을 이용하여 협업하는법
 ### 업데이트중
