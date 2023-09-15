@@ -22,6 +22,7 @@
   
 [db연결세팅 readme.md 열기](https://github.com/nxx5xxx/study/blob/master/connectDB/readme.md)
 
-
+## NoSQL - MongoDB 이용해서 공부하기
+[NoSQL readme.md 열기](https://github.com/nxx5xxx/study/blob/master/noSQL/readme.md)
 
 ### 업데이트중
