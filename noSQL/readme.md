@@ -1,5 +1,7 @@
 # NoSQL 배우기
     작성자 nxx5xxx
+*  [MongoCompass - GUI 사용하기](#MongoCompass)
+*  [MongoShell - CLI 사용하기](#MongoShell)
 ## 배우는 이유
     배워야 할 지식도 많지만
     관계형 데이터베이스는 Oracle SQL , MariaDB , MySQL , Postgres 정도를 배웠고
@@ -72,7 +74,7 @@
     몽고db설치경로(바꾸지 않았다면 C:\Program Files\MongoDB\Server\7.0\bin 이것이 기본값)
     을 추가해준후 확인을 눌러 변수와 시스템속성을 빠져나온 후 다시 mongod --version을 쳐본다
 
-## MongoDB Compass 사용하기
+## MongoDB Compass 사용하기<a id="MongoCompass"></a>
 <img src="img/1.PNG">
 
     Shell을쓴 cli기반이 아닌 compass를쓴 gui기반으로 공부하려한다
@@ -151,7 +153,64 @@
 
     https://www.mongodb.com/docs/compass/master/
 
-## 쉘을 이용한 mongoDB
+---
+
+## MongoDB shell 사용하기 <a id="MongoShell"></a>
+### 사용하기에 앞서
+    다른 글 들을 보니 cmd창에서 mongo만 치면 접속이 되지만
+    몇 버전부터인지는 모르겠으나 내가쓰는 버전에는 mongo.exe파일이 안들어있다
+    mongosh를 설치해야하는데 설치하는 주소는
+    https://www.mongodb.com/try/download/shell
+    이 되겠다
+
+    zip파일과 msi로 받을 수 있는데 msi로 설치하겠다
+    해당 파일을 받은 후
+    Next> 이 계정에만 설치할게 아니라면 Install Just for you의 체크를 해제>next>install
+
+    설치 후 cmd에 mongosh를 친다
+
+    근데?
+
+<img src="img/msh1.PNG">
+
+    아 뭐지....
+<img src="img/msh2.PNG">
+    
+    몽고컴파스도 안된다
+    어제와 오늘 내 컴퓨터의 달라진점은 껏다 킨 후 몽고쉘을 설치한것 뿐인데
+    왜 안될까 하고 생각해봤다
+
+<img src="img/msh3.PNG">
+
+    정답은 이것
+    점유율을 조금이라도 낮추기위해 db를 안쓸때는 서비스를 꺼두는데
+    (수동으로 해놓고 다시시작한다 보통)
+    이것때문이었다
+
+<img src="img/msh4.PNG">
+
+    다시 하니까 잘된다
+    근데 방금 다운받았는데 2.0.1을 사용할수 있다네..?
+    그냥해야지
+
+### MongoShell 사용하기
+<img src="img/msh5.PNG">
+
+    먼저 use admin으로 접속하여 관리자 계정으로 들어가
+    유저를 만들어준다
+    명령어는 db.createUser({user:'유저네임',pwd:'비밀번호',roles:['root']})
+    여기서 root는 최상위 권한으로 알고있다
+    아 git으로 혼자 공부하면 안좋은점을 알았다
+    누군가 보고 피드백을 줄 수 없다 >> 내 지식이 정확하게 쌓여가는지 알 수 없음
+    물어볼곳이 없다 >> 쉬운문제도 시간을 많이 소모하게됨
+    큰일났다
+
+<img src="img/msh6.PNG">    
+
+    생성한 유저 확인하기
+    show users 명령어로 확인할 수 있다
+    해당 유저를 지우는 명령어는 db.dropUser('유저명')
+    
 
 ## 쉘 명령어 정리
     use admin
