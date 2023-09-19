@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>고유키</th>
+				<th>이름</th>
+				<th>비밀번호</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${userList}">
+				<td th:text="${user._id}"></td>
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.pw}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/user/insert" method="post" role="form" th:object="${userDocument}">
+		<table>
+			<tr>
+				<th><label for="id">고유키</label></th>
+				<td><input type="text" name="id" id="id"></td>
+			</tr>
+			<tr>
+				<th><label th:for="name">이름</label></th>
+				<td><input type="text" th:field="*{name}" placeholder="이름"></td>
+			</tr>
+			<tr>
+				<th><label th:for="pw">비밀번호</label></th>
+				<td><input type="text" th:field="*{pw}" placeholder="비밀번호입력"></td>
+			</tr>
+			<tr>
+				<th colspan="2"><input type="submit" value="전송"></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
