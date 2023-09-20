@@ -44,4 +44,16 @@ public class UserController {
 		userService.createUser2(userDocument);
 		return "index";
 	}
+	
+	@GetMapping("/update")
+	public String updateUser(UserDocument userDocument) {
+		System.out.println(userService.selectById(userDocument.get_id()));
+		return "user/update";
+	}
+	
+	@PostMapping("/update")
+	public String updateUserProcedure(UserDocument userDocument, @RequestParam("id") String id) {
+		
+		return "index";
+	}
 }

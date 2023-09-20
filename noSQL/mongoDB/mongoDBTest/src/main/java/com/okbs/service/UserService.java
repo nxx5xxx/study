@@ -8,4 +8,5 @@ public interface UserService {
 	UserDocument createUser(UserDocument userDocument);
 	UserDocument createUser2(UserDocument userDocument);
 	List<UserDocument> selectAllUsers();
+	UserDocument selectById(String id);
 }

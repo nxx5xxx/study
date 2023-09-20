@@ -30,5 +30,8 @@ public class UserServiceImpl implements UserService{
 	public List<UserDocument> selectAllUsers() {
 		return userRepository.findAll();
 	}
-	
+	@Override
+	public UserDocument selectById(String id) {
+		return userRepository.findById(id).orElseThrow();
+	}
 }
