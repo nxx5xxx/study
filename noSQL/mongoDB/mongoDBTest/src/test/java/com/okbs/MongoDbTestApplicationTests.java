@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.okbs.document.UserDocument;
 import com.okbs.repository.UserRepository;
 
 @SpringBootTest
@@ -34,7 +35,18 @@ class MongoDbTestApplicationTests {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("변경할 유저 네임을 입력해주세요");
 		String userName = sc.nextLine();
-		userRepository.findById(userName);
-		
+		UserDocument user1 = userRepository.findByName(userName);
+		user1.setPw("변경된비밀번호");
+		userRepository.save(user1);
+		sc.close();
+	}
+	
+	@Test
+	@DisplayName("유저삭제")
+	void deleteUser() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("삭제할 유저 네임을 입력해주세요");
+		String userName = sc.nextLine();
+		userRepository.deleteByName(userName);
 	}
 }
