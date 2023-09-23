@@ -34,4 +34,15 @@ public class UserServiceImpl implements UserService{
 	public UserDocument selectById(String id) {
 		return userRepository.findById(id).orElseThrow();
 	}
+	
+	@Override
+	public void updateUser(String id, UserDocument userDocument) {
+		userDocument.set_id(id);
+		userRepository.save(userDocument);	
+	}
+	
+	@Override
+	public void deleteUser(String id) {
+		userRepository.deleteById(id);	
+	}
 }

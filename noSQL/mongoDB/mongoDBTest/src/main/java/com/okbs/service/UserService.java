@@ -9,4 +9,6 @@ public interface UserService {
 	UserDocument createUser2(UserDocument userDocument);
 	List<UserDocument> selectAllUsers();
 	UserDocument selectById(String id);
+	void updateUser(String id, UserDocument userDocument);
+	void deleteUser(String id);
 }

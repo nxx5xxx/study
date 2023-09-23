@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -46,14 +47,23 @@ public class UserController {
 	}
 	
 	@GetMapping("/update")
-	public String updateUser(UserDocument userDocument) {
-		System.out.println(userService.selectById(userDocument.get_id()));
+	public String updateUser(UserDocument userDocument, @RequestParam("id") String id,Model model) {
+		userDocument = userService.selectById(id);
+		model.addAttribute("userDocument", userDocument);
+		model.addAttribute("id", id);
 		return "user/update";
 	}
 	
 	@PostMapping("/update")
 	public String updateUserProcedure(UserDocument userDocument, @RequestParam("id") String id) {
+		userService.updateUser(id, userDocument);
+		return "redirect:/user/select";
+	}
+	
+	@GetMapping("/delete")
+	public String deleteUser(@RequestParam("id") String id) {
+		userService.deleteUser(id);
+		return "redirect:/user/select";
 		
-		return "index";
 	}
 }

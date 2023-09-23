@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+.td_link {
+	cursor:pointer;
+}
+</style>
 </head>
 <body>
 	<table>
@@ -15,9 +20,10 @@
 		</thead>
 		<tbody>
 			<tr th:each="user : ${userList}">
-				<td th:text="${user._id}"></td>
+				<td class="td_link" th:text="${user._id}" th:onclick="|location.href='@{/user/update(id=${user._id})}'|"></td>
 				<td th:text="${user.name}"></td>
 				<td th:text="${user.pw}"></td>
+				<td class="td_link" th:text="삭제" th:onclick="|location.href='@{/user/delete(id=${user._id})}'|"></td>
 			</tr>
 		</tbody>
 	</table>
