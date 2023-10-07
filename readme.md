@@ -25,4 +25,8 @@
 ## NoSQL - MongoDB 이용해서 공부하기
 [NoSQL readme.md 열기](https://github.com/nxx5xxx/study/blob/master/noSQL/readme.md)
 
+## 산업기사 필기 준비
+  정보처리 산업기사 필기를 준비하기위해 정리중
+  [1. 애플리케이션배포](https://github.com/nxx5xxx/study/정처기산필기/필기정리/blob/master/connectDB/애플리케이션배포.md)
+
 ### 업데이트중
