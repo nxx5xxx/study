@@ -30,4 +30,7 @@
   
   [1. 애플리케이션배포](https://github.com/nxx5xxx/study/blob/master/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%82%B0%20%ED%95%84%EA%B8%B0/%ED%95%84%EA%B8%B0%EC%A0%95%EB%A6%AC/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%EB%B0%B0%ED%8F%AC.md)
 
+  [2. SQL활용](https://github.com/nxx5xxx/study/blob/master/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%82%B0%20%ED%95%84%EA%B8%B0/%ED%95%84%EA%B8%B0%EC%A0%95%EB%A6%AC/SQL%ED%99%9C%EC%9A%A9.md)
+  
+
 ### 업데이트중
