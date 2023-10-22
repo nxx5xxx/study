@@ -1,3 +1,6 @@
+[목록으로](https://github.com/nxx5xxx/study/blob/master/readme.md)
+<a href="#abt" style="font-size: 24px;">맨 아래로</a>
+
 # 산업기사 필기정리2
 # SQL활용
 
@@ -255,3 +258,6 @@ SELECT * FROM (SELECT ~ WHERE ~ UNION ALL SELECT ~ WHERE ~ UNION ALL SELECT ~ WH
     WHERE TABLE_NAME = 'EXAM';
 
     <img src="./INDEX2.PNG">
+
+    [목록으로](https://github.com/nxx5xxx/study/blob/master/readme.md)
+<a href="#" style="font-size: 24px;" id="abt"> 상단으로 </a>
