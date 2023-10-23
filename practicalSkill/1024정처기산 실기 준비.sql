@@ -69,7 +69,7 @@ insert into tbl_party_202005 values('P4','D정당','2010-04-01','옥대표','02'
 insert into tbl_party_202005 values('P5','E정당','2010-05-01','임대표','02','1111','0005');
 commit;
 select * from tbl_member_202005;
-select * from tbl_party_202005;
+
 
 -- sub1
 select m_no,m_name,p_name,
@@ -83,11 +83,30 @@ select m_no,m_name,p_name,
     trim(p_tel1)||'-'||p_tel2||'-'||p_tel3 as p_tel
     from tbl_member_202005 m , tbl_party_202005 p  where m.p_code=p.p_code;
 -- sub2 투표하기
-select * from tbl_vote_202005;
 insert into tbl_vote_202005 values(?,?,?,?,?,?);
 
 -- sub3 투표검수조회
-
+select v_name,19||substr(v_jumin,1,2)||'년'||substr(v_jumin,3,2)||'월'||substr(v_jumin,5,2)||'일생' as v_jumin,
+    '만 '||to_char(120-substr(v_jumin,0,2))||'세' as age, CASE WHEN substr(v_jumin,7,1)='1' THEN '남' ELSE '여' END as sex,m_no,
+    substr(v_time,0,2)||':'||substr(v_time,3,2) as time, CASE WHEN v_confirm='Y' THEN '확인' ELSE '미확인' END as vote
+     from tbl_vote_202005 where v_area='제1투표장';
+select * from tbl_vote_202005 where v_area='제1투표장';
 
 select * from tbl_member_202005 m , tbl_party_202005 p  where m.p_code=p.p_code;
 select p_code, p_tel1||'-'||p_tel2||'-'||p_tel3 as tel from tbl_party_202005;
+
+--sub4 총 투표건수
+select * from tbl_vote_202005;
+select * from tbl_member_202005;
+select m.m_no,m.m_name,count(v.m_no)as count_no from tbl_vote_202005 v,tbl_member_202005 m where v.m_no=m.m_no and v.v_confirm!='N' group by v.m_no,m.m_no,m.m_name order by count_no desc;
+
+-- 날짜와 시간형식테스트
+create table dateTest(tdate date,ttime varchar2(10));
+insert into dateTest values('20160101','0930');
+select * from dateTest;
+
+select * from dateTest;
+select to_char(tdate,'YYYY-MM-DD HH:MI:SS') from dateTest;
+-- 이렇게는 안됨 select to_char(tdate,'YYYY년MM월DD일') from dateTest;
+-- 불가 select to_char(ttime,'HH:MI') from dateTest;
+select to_date(ttime,'HH:MI') from dateTest;
