@@ -39,4 +39,11 @@
   [5. 프로그램 언어 응용](https://github.com/nxx5xxx/study/blob/master/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%82%B0%20%ED%95%84%EA%B8%B0/%ED%95%84%EA%B8%B0%EC%A0%95%EB%A6%AC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%96%B8%EC%96%B4%EC%9D%91%EC%9A%A9.md)
 
   [6. 프로그램 언어 활용](https://github.com/nxx5xxx/study/blob/master/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%82%B0%20%ED%95%84%EA%B8%B0/%ED%95%84%EA%B8%B0%EC%A0%95%EB%A6%AC/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%ED%99%9C%EC%9A%A9.md)
+
+  [1023기출문제 기억나는것만](https://github.com/nxx5xxx/study/blob/master/%EC%A0%95%EC%B2%98%EA%B8%B0%EC%82%B0%20%ED%95%84%EA%B8%B0/%ED%95%84%EA%B8%B0%EC%A0%95%EB%A6%AC/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%ED%95%84%EA%B8%B01023%EB%AC%B8%EC%A0%9C.md)
+## 산업기사 실기 준비
+  정보처리 산업기사 실기를 준비하기위해 정리
+  [실기 한방에](https://github.com/nxx5xxx/study/blob/master/practicalSkill/%EC%8B%A4%EA%B8%B0%EC%A0%95%EB%A6%AC.md)
+
+  [jsp만으로 연동하기](https://github.com/nxx5xxx/study/tree/master/practicalSkill/homeshopping)
 ### 손가락 못쓸때 까진 계속 업데이트 할 예정
