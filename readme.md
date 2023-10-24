@@ -47,5 +47,5 @@
 
   [jsp만으로 연동하기](https://github.com/nxx5xxx/study/tree/master/practicalSkill/homeshopping)
 
-  [1024기출문제 유형]()
+  [1024기출문제 유형](https://github.com/nxx5xxx/study/blob/master/practicalSkill/%EC%82%B0%EC%97%85%EA%B8%B0%EC%82%AC%EC%8B%A4%EA%B8%B0%EA%B8%B0%EC%B6%9C.md)
 ### 손가락 못쓸때 까진 계속 업데이트 할 예정
