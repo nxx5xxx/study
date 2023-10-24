@@ -46,4 +46,6 @@
   [실기 한방에](https://github.com/nxx5xxx/study/blob/master/practicalSkill/%EC%8B%A4%EA%B8%B0%EC%A0%95%EB%A6%AC.md)
 
   [jsp만으로 연동하기](https://github.com/nxx5xxx/study/tree/master/practicalSkill/homeshopping)
+
+  [1024기출문제 유형]()
 ### 손가락 못쓸때 까진 계속 업데이트 할 예정
