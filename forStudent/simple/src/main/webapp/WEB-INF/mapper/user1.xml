@@ -8,4 +8,16 @@
   		select * from user1 where id = #{id}
   	]]>
   	</select>
+  	
+  	<select id="getUserList" resultType="com.simple.domain.UserDTO">
+  	<![CDATA[
+  		select * from user1
+  	]]>
+  	</select>
+  	
+  	<update id="updateUserList" parameterType="com.simple.domain.UserDTO">
+  	<![CDATA[
+  		update user1 set id=#{id} , passwd = #{passwd} , name = #{name} where no = #{no}
+  	]]>
+  	</update>
   </mapper>

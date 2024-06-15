@@ -14,8 +14,9 @@
 <P>  The time on the server is ${serverTime}. </P>
 <br>
 <ul>
-	<li><a href="${path }/user/test?id=test1">getUserTest</a></li>
 	<li>testOk</li>
+	<li><a href="${path }/user/test?id=test1">getUserTest</a></li>
+	<li><a href="${path }/user/checkBox">checkBox</a></li>
 	
 </ul>
 </body>
